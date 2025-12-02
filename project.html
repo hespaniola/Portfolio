@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Projects — Hunter</title><link rel="stylesheet" href="css/base.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /></head><body><header class="site-header"><div class="container nav"><div class="brand">Hunter Espaniola</div><nav class="desktop"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav><div class="spacer"></div><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button><button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button></div><div class="container mobile-menu"><nav class="mobile"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav></div></header><main class="section">
+  <div class="container" data-reveal>
+    <h1>Projects</h1>
+    <div class="row-center" style="gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem">
+      <button class="btn ghost" data-filter="all">All</button>
+      <button class="btn ghost" data-filter="photography">Photography</button>
+      <button class="btn ghost" data-filter="videography">Videography</button>
+      <input id="search" placeholder="Search…" style="min-width:220px" />
+      <select id="sort">
+        <option value="new">Newest</option>
+        <option value="old">Oldest</option>
+      </select>
+    </div>
+    <div class="grid cols-3" id="projects-grid"></div>
+    <div style="margin-top:1rem"><button id="load-more" class="btn block">Load more</button></div>
+  </div>
+</main>
+<style>
+  #project-modal{position:fixed; inset:0; background:rgba(0,0,0,.75); display:none; align-items:center; justify-content:center; z-index:200}
+  #project-modal.open{display:flex}
+  #project-modal .modal-panel{background:var(--bg); color:var(--text); width:min(900px, 92vw); max-height:88vh; overflow:auto; border-radius:1rem; border:1px solid var(--border); box-shadow:var(--shadow); padding:1.25rem; outline:none}
+  #project-modal .modal-header{display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:.75rem}
+  #project-modal button.close{border:1px solid var(--border); background:transparent; padding:.4rem .6rem; border-radius:.5rem; cursor:pointer}
+</style>
+<div id="project-modal" aria-hidden="true">
+  <div class="modal-panel" tabindex="-1" role="dialog" aria-modal="true" aria-label="Project detail">
+    <div class="modal-header">
+      <strong>Project</strong>
+      <button id="project-modal-close" class="close" aria-label="Close">✕</button>
+    </div>
+    <div id="project-modal-body" class="modal-body"></div>
+  </div>
+</div><footer class="site-footer"><div class="container row-center" style="justify-content:space-between; flex-wrap:wrap"><small class="muted">© <span id="year"></span> Hunter Espaniola</small><div class="row-center"><a href="https://instagram.com/10bucktruck" target="_blank" class="muted">Instagram</a><span class="muted">•</span><a href="mailto:hunter@example.com" class="muted">Email</a></div></div><script>document.getElementById("year").textContent=new Date().getFullYear();</script></footer><script src="js/main.js"></script><script src="js/projects.js"></script></body></html>

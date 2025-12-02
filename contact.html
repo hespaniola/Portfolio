@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Contact — Hunter</title><link rel="stylesheet" href="css/base.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /></head><body><header class="site-header"><div class="container nav"><div class="brand">Hunter Espaniola</div><nav class="desktop"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav><div class="spacer"></div><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button><button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button></div><div class="container mobile-menu"><nav class="mobile"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav></div></header><main class="container section">
+  <h1 data-reveal>Contact</h1>
+  <div class="card" data-reveal>
+    <div class="card__body">
+      <p class="muted">Email: <a href="mailto:hunterespaniola50@gmail.com">hunterespaniola50@gmail.com</a></p>
+      <p class="muted">Instagram: <a href="https://instagram.com/10bucktruck" target="_blank" rel="noopener">10bucktruck</a></p>
+    </div>
+  </div>
+  <form data-contact novalidate data-reveal style="margin-top:1rem">
+    <div class="row">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+        <div class="input-error" data-err-name></div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <div class="input-error" data-err-email></div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="type">Project type</label>
+        <select id="type" name="type">
+          <option>Videography</option>
+          <option>Photography</option>
+          <option>UGC</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message <small class="muted">(<span id="char-count">0</span> chars)</small></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="input-error" data-err-message></div>
+      </div>
+    </div>
+    <button class="btn accent" type="submit">Send</button>
+    <p class="input-hint">Demo only: the form will show a success alert instead of sending.</p>
+  </form>
+
+</main>
+
+<footer class="site-footer">
+  +++
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

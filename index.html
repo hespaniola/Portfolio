@@ -1,0 +1,123 @@
+<!doctype html><html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hunter — Portfolio</title><link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script src="js/canvas-playground.js" defer></script>
+
+  </head>
+  <body>
+    <header class="site-header"><div class="container nav">
+      <div class="brand">Hunter Espaniola</div>
+      <nav class="desktop">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="project.html">Projects</a>
+        <a data-nav href="equipment.html">Equipment</a>
+        <a data-nav href="gallery.html">Gallery</a>
+        <a data-nav href="LetsMeet.html">Let's Meet</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+      <div class="spacer"></div>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button>
+      <button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button>
+    </div><div class="container mobile-menu">
+      <nav class="mobile">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="project.html">Projects</a>
+      <a data-nav href="equipment.html">Equipment</a>
+      <a data-nav href="gallery.html">Gallery</a>
+      <a data-nav href="LetsMeet.html">Let's Meet</a>
+      <a data-nav href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+  <main>
+  <section class="hero container section" data-reveal>
+  <h1>Visual storytelling through cinematography & automotive videography</h1>
+  <p class="muted">
+    I'm Hunter, a filmmaker and content creator passionate about turning raw footage into cinematic stories.
+    Whether it’s automotive builds, live events, or brand reels I focus on emotion, pacing, and detail.
+  </p>
+
+  <div class="row-center" style="margin-top:1rem">
+    <a class="btn accent" href="project.html">Watch My Work</a>
+    <a class="btn ghost" href="LetsMeet.html">Let’s Collaborate</a>
+  </div>
+
+  <div class="kpis" style="margin-top:1rem">
+    <span>Videographer & Cinematographer</span> <span>•</span>
+    <span>Automotive & Live Events</span> <span>
+  </div>
+</section>
+<!--Html5 Canvas Element Plugin -->
+<section class="container section" data-reveal>
+  <div class="card" style="overflow:hidden;">
+   <div class="canvas-wrapper" style="margin-top:1rem; border-radius:1rem; overflow:hidden;">
+      <canvas
+        id="portfolioCanvas"
+        width="900"
+        height="260"
+        aria-label="Abstract animated shapes representing creative energy"
+        role="img">
+      </canvas>
+    </div>
+  </div>
+</section>
+
+
+  <section class="container section" data-reveal>
+  <h2>Featured Projects</h2>
+
+  <div class="grid cols-3" id="featured">
+    <!-- Matt's Off Road Recovery -->
+    <article class="card" data-reveal>
+      <img src="assets/images/matt-event.jpg" alt="Matt's Off Road Recovery Live Event">
+      <div class="card__body">
+        <div class="row-center" style="justify-content:space-between">
+          <h3 class="card__title">Matt's Off Road Recovery</h3><small class="muted">2025</small>
+        </div>
+        <p class="muted">Captured the energy, teamwork, and raw action of an off-road recovery event. Shot handheld for immersion and realism.</p>
+        <div class="card__meta">
+          <span class="badge">event</span>
+          <span class="badge">cinematic</span>
+          <span class="badge">action</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- TopGAuto -->
+    <article class="card" data-reveal>
+      <img src="images/topgauto.jpg" alt="TopGAuto cinematic build reel">
+      <div class="card__body">
+        <div class="row-center" style="justify-content:space-between">
+          <h3 class="card__title">TopGAuto</h3><small class="muted">2025</small>
+        </div>
+        <p class="muted">High-energy edit showcasing custom automotive builds, color-graded for punch and tone.</p>
+        <div class="card__meta">
+          <span class="badge">automotive</span>
+          <span class="badge">cinematography</span>
+          <span class="badge">reel</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10BuckTruck -->
+    <article class="card" data-reveal>
+      <img src="images/truck1.jpg" alt="10BuckTruck cinematic series">
+      <div class="card__body">
+        <div class="row-center" style="justify-content:space-between">
+          <h3 class="card__title">10BuckTruck</h3><small class="muted">2025</small>
+        </div>
+        <p class="muted">A documentary-style project capturing the rebuild of my budget truck. Blends story, process, and emotion.</p>
+        <div class="card__meta">
+          <span class="badge">documentary</span>
+          <span class="badge">automotive</span>
+          <span class="badge">storytelling</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main><footer class="site-footer"><div class="container row-center" style="justify-content:space-between; flex-wrap:wrap"><small class="muted">© <span id="year"></span> Hunter Espaniola</small><div class="row-center"><a href="https://instagram.com/10bucktruck" target="_blank" class="muted">Instagram</a><span class="muted">•</span><a href="mailto:hunter@example.com" class="muted">Email</a></div></div><script>document.getElementById("year").textContent=new Date().getFullYear();</script></footer><script src="js/main.js"></script></body></html>

@@ -1,0 +1,159 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Equipment — Hunter</title><link rel="stylesheet" href="css/base.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /></head><body><header class="site-header"><div class="container nav"><div class="brand">Hunter Espaniola</div><nav class="desktop"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav><div class="spacer"></div><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button><button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button></div><div class="container mobile-menu"><nav class="mobile"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav></div></header>
+  <main>
+<main>
+  <section class="container section" data-reveal>
+    <h1>My Gear</h1>
+    <p class="muted">
+      Every shot tells a story — and these are the tools I use to capture it.
+      My setup is built for versatility: from cinematic drone footage to handheld
+      storytelling and immersive 360° shots.
+    </p>
+  </section>
+
+  <section class="container section" data-reveal>
+    <!-- DJI Mini 4 Pro -->
+    <div class="card" data-acc style="margin-top:1rem">
+      <div class="card__body row-center" style="justify-content:space-between">
+        <strong>DJI Mini 4 Pro</strong>
+        <button class="btn ghost" data-acc-title aria-expanded="false">Toggle</button>
+      </div>
+      <div data-acc-panel style="display:none; padding:0 1rem 1rem">
+        <p class="muted">
+          My go-to drone for cinematic aerials. Compact, stable, and perfect for dynamic
+          establishing shots. I use it for everything from chase scenes to landscape B-roll.
+        </p>
+        <div class="card__meta">
+          <span class="badge">drone</span>
+          <span class="badge">4K</span>
+          <span class="badge">aerials</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lumix G7 -->
+    <div class="card" data-acc style="margin-top:1rem">
+      <div class="card__body row-center" style="justify-content:space-between">
+        <strong>Panasonic Lumix G7</strong>
+        <button class="btn ghost" data-acc-title aria-expanded="false">Toggle</button>
+      </div>
+      <div data-acc-panel style="display:none; padding:0 1rem 1rem">
+        <p class="muted">
+          My main camera for cinematic work. Shoots crisp 4K with great color depth.
+          I pair it with manual lenses to get that authentic, film-style look.
+        </p>
+        <div class="card__meta">
+          <span class="badge">4K</span>
+          <span class="badge">cinematic</span>
+          <span class="badge">handheld</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insta360 GO 3S -->
+    <div class="card" data-acc style="margin-top:1rem">
+      <div class="card__body row-center" style="justify-content:space-between">
+        <strong>Insta360 GO 3S</strong>
+        <button class="btn ghost" data-acc-title aria-expanded="false">Toggle</button>
+      </div>
+      <div data-acc-panel style="display:none; padding:0 1rem 1rem">
+        <p class="muted">
+          Tiny but powerful action cam. I use it for quick, creative angles — like mounting
+          on cars, helmets, or handheld rigs for first-person or BTS perspectives.
+        </p>
+        <div class="card__meta">
+          <span class="badge">action</span>
+          <span class="badge">stabilized</span>
+          <span class="badge">POV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DJI FPV -->
+    <div class="card" data-acc style="margin-top:1rem">
+      <div class="card__body row-center" style="justify-content:space-between">
+        <strong>DJI FPV</strong>
+        <button class="btn ghost" data-acc-title aria-expanded="false">Toggle</button>
+      </div>
+      <div data-acc-panel style="display:none; padding:0 1rem 1rem">
+        <p class="muted">
+          For dynamic chase shots and fast movement. The FPV adds intensity and adrenaline
+          to reels — perfect for automotive action and wide cinematic fly-ins.
+        </p>
+        <div class="card__meta">
+          <span class="badge">fpv</span>
+          <span class="badge">drone</span>
+          <span class="badge">action</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insta360 X4 -->
+    <div class="card" data-acc style="margin-top:1rem">
+      <div class="card__body row-center" style="justify-content:space-between">
+        <strong>Insta360 X4</strong>
+        <button class="btn ghost" data-acc-title aria-expanded="false">Toggle</button>
+      </div>
+      <div data-acc-panel style="display:none; padding:0 1rem 1rem">
+        <p class="muted">
+          My favorite for immersive 360° content and creative transitions.
+          Lets me reframe shots in post and create impossible perspectives.
+        </p>
+        <div class="card__meta">
+          <span class="badge">360°</span>
+          <span class="badge">reframing</span>
+          <span class="badge">creative</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('[data-acc-title]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const box = btn.closest('[data-acc]');
+        const panel = box.querySelector('[data-acc-panel]');
+        box.classList.toggle('open');
+        panel.style.display = box.classList.contains('open') ? '' : 'none';
+      });
+    });
+  </script>
+</main>
+
+  <section class="container section" data-reveal>
+    <h2>Sample Shots</h2>
+    <div class="grid cols-3">
+      <img src="assets/images/sample1.jpg" alt="Sample 1">
+      <img src="assets/images/sample2.jpg" alt="Sample 2">
+      <img src="assets/images/sample3.jpg" alt="Sample 3">
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container row-center" style="justify-content:space-between; flex-wrap:wrap">
+    <small class="muted">© <span id="year"></span> Hunter Espaniola</small>
+    <div class="row-center">
+      <a href="https://instagram.com/10bucktruck" target="_blank" class="muted">Instagram</a>
+      <span class="muted">•</span>
+      <a href="mailto:hunter@example.com" class="muted">Email</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-acc-title]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const box = btn.closest('[data-acc]');
+      const panel = box.querySelector('[data-acc-panel]');
+      const isOpen = box.classList.toggle('open');
+      panel.style.display = isOpen ? '' : 'none';
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  });
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

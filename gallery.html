@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Gallery — Hunter</title><link rel="stylesheet" href="css/base.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /></head><body><header class="site-header"><div class="container nav"><div class="brand">Hunter Espaniola</div><nav class="desktop"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav><div class="spacer"></div><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button><button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button></div><div class="container mobile-menu"><nav class="mobile"><a data-nav href="index.html">Home</a><a data-nav href="project.html">Projects</a><a data-nav href="equipment.html">Equipment</a><a data-nav href="gallery.html">Gallery</a><a data-nav href="LetsMeet.html">Let's Meet</a><a data-nav href="contact.html">Contact</a></nav></div></header><main class="container section">
+  <h1 data-reveal>Gallery</h1>
+  <div class="row-center" style="gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem">
+    <button class="btn ghost" data-filter="all">All</button>
+    <button class="btn ghost" data-filter="portrait">Portrait</button>
+    <button class="btn ghost" data-filter="automotive">Automotive</button>
+    <button class="btn ghost" data-filter="events">Events</button>
+  </div>
+  <div id="gallery" data-reveal>
+    <div class="gallery-row">
+      <img src="assets/images/g1.jpg" alt="Portrait" data-type="portrait" data-lightbox data-src="assets/images/g1.jpg">
+      <img src="assets/images/g2.jpg" alt="Automotive" data-type="automotive" data-lightbox data-src="assets/images/g2.jpg">
+      <img src="assets/images/g3.jpg" alt="Events" data-type="events" data-lightbox data-src="assets/images/g3.jpg">
+    </div>
+    <div class="gallery-row">
+      <img src="assets/images/g4.jpg" alt="Automotive" data-type="automotive" data-lightbox data-src="assets/images/g4.jpg">
+      <img src="assets/images/g5.jpg" alt="Portrait" data-type="portrait" data-lightbox data-src="assets/images/g5.jpg">
+      <img src="assets/images/g6.jpg" alt="Events" data-type="events" data-lightbox data-src="assets/images/g6.jpg">
+    </div>
+  </div>
+  <div class="lightbox-backdrop" id="lightbox-backdrop" aria-hidden="true">
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1">
+      <img id="lightbox-img" alt="">
+      <div class="caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+  <style>
+    .gallery-row{display:flex;gap:.5rem;margin:.5rem 0}
+    .gallery-row img{height:180px;object-fit:cover;flex:1;border-radius:.4rem;cursor:pointer}
+    @media (max-width:720px){ .gallery-row img{height:120px} }
+  </style>
+  <script src="js/lightbox.js"></script>
+  <script>
+    const buttons = document.querySelectorAll('[data-filter]');
+    const imgs = document.querySelectorAll('#gallery img');
+    buttons.forEach(b=> b.addEventListener('click', ()=>{
+      const t = b.dataset.filter;
+      imgs.forEach(img=>{
+        img.style.display = (t==='all' || img.dataset.type===t) ? '' : 'none';
+      });
+      buttons.forEach(x=>x.classList.toggle('active', x===b));
+    }));
+  </script>
+</main>
+  ...
+  <style>/* gallery-row styles */</style>
+</main>
+
+<footer class="site-footer">
+  ...
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+  const buttons = document.querySelectorAll('[data-filter]');
+  const imgs = document.querySelectorAll('#gallery img');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    const t = b.dataset.filter;
+    imgs.forEach(img => {
+      img.style.display = (t === 'all' || img.dataset.type === t) ? '' : 'none';
+    });
+    buttons.forEach(x => x.classList.toggle('active', x === b));
+  }));
+</script>
+</body>
+</html>
+
+<footer class="site-footer"><div class="container row-center" style="justify-content:space-between; flex-wrap:wrap"><small class="muted">© <span id="year"></span> Hunter Espaniola</small><div class="row-center"><a href="https://instagram.com/10bucktruck" target="_blank" class="muted">Instagram</a><span class="muted">•</span><a href="mailto:hunter@example.com" class="muted">Email</a></div></div><script>document.getElementById("year").textContent=new Date().getFullYear();</script></footer><script src="js/main.js"></script><script src="js/lightbox.js"></script></body></html>
