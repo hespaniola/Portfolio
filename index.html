@@ -1,123 +1,263 @@
-<!doctype html><html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Hunter — Portfolio</title><link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <script src="js/canvas-playground.js" defer></script>
-
-  </head>
-  <body>
-    <header class="site-header"><div class="container nav">
-      <div class="brand">Hunter Espaniola</div>
-      <nav class="desktop">
-        <a data-nav href="index.html">Home</a>
-        <a data-nav href="project.html">Projects</a>
-        <a data-nav href="equipment.html">Equipment</a>
-        <a data-nav href="gallery.html">Gallery</a>
-        <a data-nav href="LetsMeet.html">Let's Meet</a>
-        <a data-nav href="contact.html">Contact</a>
-      </nav>
-      <div class="spacer"></div>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌓</button>
-      <button class="menu-toggle" data-menu-toggle aria-label="Menu">☰</button>
-    </div><div class="container mobile-menu">
-      <nav class="mobile">
-      <a data-nav href="index.html">Home</a>
-      <a data-nav href="project.html">Projects</a>
-      <a data-nav href="equipment.html">Equipment</a>
-      <a data-nav href="gallery.html">Gallery</a>
-      <a data-nav href="LetsMeet.html">Let's Meet</a>
-      <a data-nav href="contact.html">Contact</a></nav>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hunter Espaniola — creative media, leadership, and professional e-portfolio." />
+  <title>Hunter Espaniola | E-Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">HE<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
+
   <main>
-  <section class="hero container section" data-reveal>
-  <h1>Visual storytelling through cinematography & automotive videography</h1>
-  <p class="muted">
-    I'm Hunter, a filmmaker and content creator passionate about turning raw footage into cinematic stories.
-    Whether it’s automotive builds, live events, or brand reels I focus on emotion, pacing, and detail.
-  </p>
-
-  <div class="row-center" style="margin-top:1rem">
-    <a class="btn accent" href="project.html">Watch My Work</a>
-    <a class="btn ghost" href="LetsMeet.html">Let’s Collaborate</a>
-  </div>
-
-  <div class="kpis" style="margin-top:1rem">
-    <span>Videographer & Cinematographer</span> <span>•</span>
-    <span>Automotive & Live Events</span> <span>
-  </div>
-</section>
-<!--Html5 Canvas Element Plugin -->
-<section class="container section" data-reveal>
-  <div class="card" style="overflow:hidden;">
-   <div class="canvas-wrapper" style="margin-top:1rem; border-radius:1rem; overflow:hidden;">
-      <canvas
-        id="portfolioCanvas"
-        width="900"
-        height="260"
-        aria-label="Abstract animated shapes representing creative energy"
-        role="img">
-      </canvas>
-    </div>
-  </div>
-</section>
-
-
-  <section class="container section" data-reveal>
-  <h2>Featured Projects</h2>
-
-  <div class="grid cols-3" id="featured">
-    <!-- Matt's Off Road Recovery -->
-    <article class="card" data-reveal>
-      <img src="assets/images/matt-event.jpg" alt="Matt's Off Road Recovery Live Event">
-      <div class="card__body">
-        <div class="row-center" style="justify-content:space-between">
-          <h3 class="card__title">Matt's Off Road Recovery</h3><small class="muted">2025</small>
-        </div>
-        <p class="muted">Captured the energy, teamwork, and raw action of an off-road recovery event. Shot handheld for immersion and realism.</p>
-        <div class="card__meta">
-          <span class="badge">event</span>
-          <span class="badge">cinematic</span>
-          <span class="badge">action</span>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Creative Media • Leadership • Entrepreneurship</p>
+        <h1>Hunter<br />Espaniola</h1>
+        <p class="hero-text">
+          I create visual content that helps businesses communicate clearly, build credibility,
+          and connect with the people they want to reach.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
         </div>
       </div>
-    </article>
+      <div class="profile-card">
+        <img src="assets/profile-placeholder.svg" alt="Placeholder for Hunter Espaniola's professional profile photo" />
+        <p>Replace this image with a high-resolution professional photo before final submission.</p>
+      </div>
+    </section>
 
-    <!-- TopGAuto -->
-    <article class="card" data-reveal>
-      <img src="images/topgauto.jpg" alt="TopGAuto cinematic build reel">
-      <div class="card__body">
-        <div class="row-center" style="justify-content:space-between">
-          <h3 class="card__title">TopGAuto</h3><small class="muted">2025</small>
+    <section id="about" class="section split">
+      <div>
+        <p class="section-label">01 — About</p>
+        <h2>Who I am</h2>
+      </div>
+      <div class="content-column">
+        <p>
+          I am a student, content creator, and co-founder of Apex Visuals with an interest in
+          videography, social media, real estate media, and entrepreneurship. I enjoy combining
+          creative ideas with practical strategy to make content that has a purpose beyond simply
+          looking good.
+        </p>
+
+        <article class="panel">
+          <h3>Elevator Speech</h3>
+          <p>
+            I’m Hunter Espaniola, a creative professional focused on videography, content creation,
+            and digital marketing. Through Apex Visuals and client social media work, I have developed
+            experience creating videos, photography, advertisements, and branded content that help
+            businesses present themselves more effectively. I bring a combination of creativity,
+            leadership, problem-solving, and a willingness to learn quickly. My goal is to keep
+            developing those skills while building work that creates measurable value for clients.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="leadership" class="section">
+      <p class="section-label">02 — Leadership & Values</p>
+      <div class="two-column">
+        <article class="panel">
+          <h2>Leadership Style</h2>
+          <p>
+            My leadership style is goal-oriented, direct, and focused on taking action. I like setting
+            high standards, creating a clear direction, and helping a team stay focused on the outcome
+            we are trying to achieve. At the same time, I have learned that strong leadership also
+            requires patience, self-awareness, and the ability to stay calm when situations become
+            difficult. I want to be the kind of leader who takes responsibility, communicates clearly,
+            and helps the people around me perform at their best.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Personal Values</h2>
+          <p>
+            Some of my most important values are accountability, authenticity, discipline, growth,
+            and fairness. These values influence the way I approach school, business, fitness, and
+            relationships because I want my actions to match the standards I expect from myself.
+            Professionally, they push me to communicate honestly, follow through on commitments, and
+            continue improving instead of becoming comfortable. I also value treating people fairly
+            and building relationships based on trust.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section-label">03 — Skills & Achievements</p>
+      <div class="two-column">
+        <div>
+          <h2>Key Skills</h2>
+          <div class="tag-list" aria-label="Key skills">
+            <span>Videography</span>
+            <span>Video Editing</span>
+            <span>Social Media Strategy</span>
+            <span>Photography</span>
+            <span>Creative Direction</span>
+            <span>Client Communication</span>
+            <span>Drone Media</span>
+            <span>Leadership</span>
+          </div>
         </div>
-        <p class="muted">High-energy edit showcasing custom automotive builds, color-graded for punch and tone.</p>
-        <div class="card__meta">
-          <span class="badge">automotive</span>
-          <span class="badge">cinematography</span>
-          <span class="badge">reel</span>
+
+        <div>
+          <h2>Achievements</h2>
+          <div class="achievement-list">
+            <article>
+              <strong>Co-founded Apex Visuals</strong>
+              <p>Helped build a creative media business serving real estate and local-business clients.</p>
+            </article>
+            <article>
+              <strong>Managed paid client content</strong>
+              <p>Created and managed recurring social content and advertising work for local businesses.</p>
+            </article>
+            <article>
+              <strong>FAA Part 107 certified</strong>
+              <p>Earned certification to perform commercial drone operations for professional media work.</p>
+            </article>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- 10BuckTruck -->
-    <article class="card" data-reveal>
-      <img src="images/truck1.jpg" alt="10BuckTruck cinematic series">
-      <div class="card__body">
-        <div class="row-center" style="justify-content:space-between">
-          <h3 class="card__title">10BuckTruck</h3><small class="muted">2025</small>
-        </div>
-        <p class="muted">A documentary-style project capturing the rebuild of my budget truck. Blends story, process, and emotion.</p>
-        <div class="card__meta">
-          <span class="badge">documentary</span>
-          <span class="badge">automotive</span>
-          <span class="badge">storytelling</span>
-        </div>
+    <section id="experience" class="section">
+      <p class="section-label">04 — Professional Experience</p>
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <article class="experience-card">
+          <div>
+            <p class="role">Co-Founder / Creative Lead</p>
+            <h3>Apex Visuals</h3>
+          </div>
+          <p>
+            I help lead Apex Visuals, a creative media business focused on real estate and branded
+            content. My responsibilities include client communication, videography, drone media,
+            editing, creative direction, sales, and day-to-day project coordination. I work with
+            clients to understand what they need and then turn those goals into content that is
+            practical, professional, and visually engaging. Building Apex Visuals has also strengthened
+            my skills in entrepreneurship, organization, and problem-solving.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <p class="role">Social Media Manager</p>
+            <h3>Snap Fitness Cedar City</h3>
+          </div>
+          <p>
+            I create and manage short-form content for Snap Fitness across social media platforms.
+            My work includes developing concepts, filming, editing, writing captions, studying trends,
+            and adjusting content based on performance. I have learned how to balance entertaining
+            content with brand messaging and clear calls to action. This role has helped me become
+            more strategic about audience attention, consistency, and measurable growth.
+          </p>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <p class="role">Content / Advertising Production</p>
+            <h3>Pain-Free Home Solutions</h3>
+          </div>
+          <p>
+            I have produced advertising concepts and video content for Pain-Free Home Solutions,
+            including campaigns for handyman, window, solar, lawn-care, and home-service offerings.
+            My role has involved identifying customer pain points, developing scripts, planning shots,
+            filming, and editing the final creative. The experience has strengthened my ability to
+            create marketing content around a specific audience instead of relying only on visuals.
+          </p>
+        </article>
       </div>
-    </article>
-  </div>
-</section>
+    </section>
 
-</main><footer class="site-footer"><div class="container row-center" style="justify-content:space-between; flex-wrap:wrap"><small class="muted">© <span id="year"></span> Hunter Espaniola</small><div class="row-center"><a href="https://instagram.com/10bucktruck" target="_blank" class="muted">Instagram</a><span class="muted">•</span><a href="mailto:hunter@example.com" class="muted">Email</a></div></div><script>document.getElementById("year").textContent=new Date().getFullYear();</script></footer><script src="js/main.js"></script></body></html>
+    <section id="projects" class="section">
+      <p class="section-label">05 — Portfolio Projects</p>
+      <div class="section-heading-row">
+        <h2>Selected Work</h2>
+        <p>Replace the placeholders below with actual videos, photos, or project links for the final version.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual">01</div>
+          <div class="project-copy">
+            <p class="project-type">Social Media Campaign</p>
+            <h3>Snap Fitness Content</h3>
+            <p>
+              A collection of short-form videos designed to make a local gym brand feel energetic,
+              relatable, and community-driven. The project combines humor, cinematic edits, trends,
+              and clear calls to action to support audience growth and gym awareness.
+            </p>
+            <a href="#" aria-label="Placeholder link for Snap Fitness project">Add project link →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual">02</div>
+          <div class="project-copy">
+            <p class="project-type">Real Estate Media</p>
+            <h3>Apex Visuals Property Marketing</h3>
+            <p>
+              Real estate media created to help agents, investors, builders, and property professionals
+              present listings more effectively. Work can include HDR photography, aerial media,
+              cinematic video, floor plans, virtual tours, and vertical social content.
+            </p>
+            <a href="#" aria-label="Placeholder link for Apex Visuals project">Add project link →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual">03</div>
+          <div class="project-copy">
+            <p class="project-type">Advertising</p>
+            <h3>Pain-Free Home Solutions Ads</h3>
+            <p>
+              A series of home-service ad concepts built around common homeowner and realtor pain
+              points, including unreliable contractors and coordinating multiple service providers.
+              The creative positions the company as a convenient, dependable solution across several
+              home-service categories.
+            </p>
+            <a href="#" aria-label="Placeholder link for Pain-Free Home Solutions project">Add project link →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="section-label">06 — Contact</p>
+      <h2>Let’s connect.</h2>
+      <p>
+        I’m interested in opportunities involving creative media, content production,
+        social media, real estate marketing, and entrepreneurship.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:YOUR-PROFESSIONAL-EMAIL@example.com">YOUR-PROFESSIONAL-EMAIL@example.com</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Add LinkedIn Profile</a>
+      </div>
+
+      <p class="draft-note">
+        Draft reminder: Replace the email, LinkedIn URL, profile image, and project links before final submission.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Hunter Espaniola · E-Portfolio Draft</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

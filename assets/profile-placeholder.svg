@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#1d2127"/>
+  <circle cx="400" cy="360" r="150" fill="#343b45"/>
+  <path d="M135 900c25-215 125-330 265-330s240 115 265 330" fill="#343b45"/>
+  <text x="400" y="950" fill="#d6ff52" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="34" font-weight="700">
+    ADD PROFESSIONAL PHOTO
+  </text>
+</svg>
